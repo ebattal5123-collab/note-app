@@ -1,0 +1,37 @@
+{
+  "name": "not-defteri-app",
+  "version": "2.0.0",
+  "description": "Ücretsiz, basit not defteri web uygulaması - APK gerektirmez",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server .",
+    "test": "echo \"Test gerekmiyor - tarayıcıda çalışıyor\" && exit 0"
+  },
+  "keywords": [
+    "not-defteri",
+    "notes",
+    "web-app",
+    "pwa",
+    "turkey",
+    "productivity",
+    "ücretsiz",
+    "offline"
+  ],
+  "author": "Kullanıcı Adı",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KULLANICI-ADI/not-defteri-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KULLANICI-ADI/not-defteri-app/issues"
+  },
+  "homepage": "https://KULLANICI-ADI.github.io/not-defteri-app",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=6.0.0"
+  }
+}
