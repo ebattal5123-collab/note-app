@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basit Not Defteri</title>
+    <meta name="description" content="Ücretsiz, basit not defteri uygulaması">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-book"></i> Basit Not Defteri</h1>
+            <div class="header-controls">
+                <button id="searchToggle" class="icon-btn" title="Not ara">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="theme-switch">
+                    <button id="themeToggle" class="icon-btn" title="Tema değiştir">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="search-container" id="searchContainer" style="display: none;">
+            <input type="text" id="searchInput" placeholder="Notlarda ara...">
+            <button id="clearSearch" class="icon-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="stats">
+            <span id="noteCount">0 not</span>
+            <span id="totalChars">0 karakter</span>
+        </div>
+
+        <div class="note-input">
+            <input type="text" id="noteTitle" placeholder="Not başlığı (opsiyonel)">
+            <textarea id="noteContent" placeholder="Notunuzu buraya yazın..."></textarea>
+            <div class="input-actions">
+                <button id="clearBtn" class="secondary-btn">
+                    <i class="fas fa-eraser"></i> Temizle
+                </button>
+                <button id="addNoteBtn" class="primary-btn">
+                    <i class="fas fa-plus"></i> Not Ekle
+                </button>
+            </div>
+        </div>
+
+        <div class="notes-container" id="notesContainer">
+            <!-- Notlar buraya eklenecek -->
+        </div>
+
+        <div class="empty-state" id="emptyState">
+            <i class="fas fa-sticky-note"></i>
+            <h3>Henüz notunuz yok</h3>
+            <p>İlk notunuzu eklemek için yukarıdaki alana yazın!</p>
+        </div>
+
+        <footer>
+            <p><i class="fas fa-info-circle"></i> Notlar tarayıcınızda kaydedilir. Github'dan indirilebilir.</p>
+            <div class="footer-links">
+                <button id="exportBtn" class="link-btn">
+                    <i class="fas fa-download"></i> Notları Dışa Aktar
+                </button>
+                <button id="importBtn" class="link-btn">
+                    <i class="fas fa-upload"></i> Notları İçe Aktar
+                </button>
+                <button id="backupBtn" class="link-btn">
+                    <i class="fas fa-cloud-upload-alt"></i> Yedekle
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- İçe Aktarma Modalı -->
+    <div class="modal" id="importModal">
+        <div class="modal-content">
+            <h3><i class="fas fa-upload"></i> Notları İçe Aktar</h3>
+            <textarea id="importData" placeholder="JSON verinizi buraya yapıştırın..."></textarea>
+            <div class="modal-actions">
+                <button id="cancelImport" class="secondary-btn">İptal</button>
+                <button id="confirmImport" class="primary-btn">İçe Aktar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
