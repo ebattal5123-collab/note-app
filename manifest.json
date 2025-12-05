@@ -1,0 +1,48 @@
+{
+  "name": "Basit Not Defteri",
+  "short_name": "NotDefteri",
+  "description": "Ücretsiz, basit ve kullanışlı not defteri uygulaması",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f8f9fa",
+  "theme_color": "#4361ee",
+  "orientation": "any",
+  "categories": ["productivity", "utilities"],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-light.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "Aydınlık mod ekran görüntüsü"
+    },
+    {
+      "src": "screenshot-dark.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "label": "Karanlık mod ekran görüntüsü"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Yeni Not Ekle",
+      "short_name": "Yeni Not",
+      "description": "Hızlıca yeni not ekle",
+      "url": "./?new",
+      "icons": [{ "src": "icon-96.png", "sizes": "96x96" }]
+    }
+  ]
+}
